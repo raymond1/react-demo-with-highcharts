@@ -68,7 +68,7 @@ You'll be rewarded for:
 
 ## Submission instructions
 
-We recommend you fork this repo, and extend access to our CTO `"Amin El-Naggar <amin@alfangroup.com>"` as a guest member in your repo. We recommend that you don't make your repo public.
+We recommend you fork this repo, and extend access to our CTO `"Amin El-Naggar <amin@alfangroup.com>"` as a member in your repo (ensure we have role with enough permissions to view the project). We recommend that you don't make your repo public.
 
 
 [Highcharts]:https://www.highcharts.com/
