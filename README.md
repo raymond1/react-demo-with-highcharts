@@ -4,7 +4,7 @@
 
 This is not an exhaustive examination of your skill-set, rather we are trying to ensure a basic understanding of the subject matter. You are tasked with creating a simple faux dashboard with a sign in, and a single overview page.
 
-There are no tricks here, nor are we looking to see if you'll cover every edge case. You must use [React.js], and [Highcharts] for the charts. For everything else you may use any library/framework you like. Keep in mind, we will reward using [Sass], and the use of grid layout frameworks, themes, and generally things that enforce consistency, and modularity.
+There are no tricks here, nor are we looking to see if you'll cover every edge case. You are also not expected to make it look exactly like our specs, so if you're using a framework that can emulate the design enough that's good enough; closer is better, but not necessary. You must use [React.js], and [Highcharts] for the charts. For everything else you may use any library/framework you like. Keep in mind, we will reward using [Sass], and the use of grid layout frameworks, themes, and generally things that enforce consistency, and modularity.
 
 We expect this test to take anywhere from 4 to 10 hours of your focused time (assuming you already have all the tooling installed on your machine etc...)
 
