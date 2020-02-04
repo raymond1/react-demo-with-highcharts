@@ -1,0 +1,98 @@
+@font-face {
+  font-family: Kirvy;
+  src: url(../fonts/Kirvy-Regular.otf);
+}
+
+@font-face {
+  font-family: Kirvy;
+  src: url(../fonts/Kirvy-Bold.otf);
+  font-weight: bold;
+}
+
+html, body, div#root{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.full_height{
+  height: 100%;
+}
+
+.fullWidth{
+  width: 100%;
+}
+
+.spacer{
+  margin-top: 10px;
+}
+
+.bottomOnly{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.container-fluid.main_container{
+  margin:0;
+  padding:0;
+  border: 1px black solid;
+  height: 100%;
+  /*background-image:url(../images/background.png);*/
+}
+
+.background{
+  border: 1px red solid;
+
+/*  margin: 0;*/
+/*  height: 1000px;
+  width: 100vw;*/
+  background-image:url(../images/background.png);
+/*  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;*/
+  /*display: block;*/
+/*  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom:0;*/
+}
+
+.loginWidget{
+  background: #fff;
+/*  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;*/
+  border: 1px red solid;
+/*  width: 35vw;
+  height: 1000px;*/
+  font-family: Kirvy;
+}
+
+.loginWidget h1{
+  border: 1px black solid;
+  padding-left: auto;
+  padding-right: auto;
+  text-align: center;
+  letter-spacing: 1em;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.loginWidget_message{
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.form-checkbox{
+  margin-top: 0.3em;
+  margin-right: 1em;
+}
+
+.btn-primary{
+  background: #343a42;
+  border: 1px #a4a8ba;
+}
