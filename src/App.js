@@ -7,6 +7,7 @@ import Login from './Login.js';
 import Dashboard from './Dashboard.js';
 import SignUp from './SignUp.js';
 
+window.users = []
 function App() {
 	return (
 		<div className="container-fluid main_container">
@@ -25,7 +26,10 @@ function App() {
 					<div className="row">
 						<div className="col-1"></div>
 						<div className="col-sm-10">
-							<p className="loginWidget_message">Welcome back! Please log in to your account.</p>
+							<Switch>
+								<Route exact path = '/' component={loginMessage} />
+								<Route exact path = '/signup' component={signupMessage}/>
+							</Switch>
 						</div>
 						<div className="col-1"></div>
 					</div>
@@ -46,4 +50,15 @@ function App() {
 	);
 }
 
+function signupMessage(){
+	return (
+		<p>Please complete to create your account.</p>
+	)
+}
+
+function loginMessage(){
+	return (
+		<p>Welcome back! Please log in to your account.</p>
+	)
+}
 export default App;
