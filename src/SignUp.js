@@ -58,28 +58,13 @@ class SignUp extends React.Component{
 		if (Object.keys(this.errors).length > 0){
 			//errors
 		}else{
-			let userExists = false
-			//create the user
-			for (let user of window.users){
-				if (user.username === this.state.username){
-					userExists = true
-				}
-			}
-			if (!userExists)
-				this.createUser(this.state.username,this.state.password)
+			//if there were no errors, then create the user and show the message that the user was created
+			this.createUser(this.state.username,this.state.password)
 		}
 
     	this.setState({justSubmitted:true})
 	}
-/*
-	updateState(fields, errors){
-		var innerUpdateState = function(state,props){
-			state.fields = fields
-			state.errors = errors
-			return state
-		}
-		return innerUpdateState
-	}*/
+
 
     handleChange(event) {
 	    const value = event.target.type === 'checkbox' ? event.target.checked : event.target.value

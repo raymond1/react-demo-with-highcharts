@@ -33,10 +33,10 @@ class Login extends React.Component{
 		if (this.state.username === sessionStorage.getItem('username') && this.state.password === sessionStorage.getItem('password')){
 			//redirect to the dashboard
 			this.setState({redirect: true})
+			sessionStorage.setItem('loggedIn', true)
 		}else{
 			this.message = (<div>Unable to log in with your username and password combination.</div>)
 		}
-		sessionStorage.setItem('loggedIn', true)
 		this.setState({loginClicked: true})
 	}
 
