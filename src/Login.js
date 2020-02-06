@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom'
+import { Redirect, Link } from 'react-router-dom'
 
 class Login extends React.Component{
 	constructor(){
@@ -36,6 +36,7 @@ class Login extends React.Component{
 		}else{
 			this.message = (<div>Unable to log in with your username and password combination.</div>)
 		}
+		sessionStorage.setItem('loggedIn', true)
 		this.setState({loginClicked: true})
 	}
 
@@ -45,50 +46,30 @@ class Login extends React.Component{
 					{this.renderRedirect()}
 
 			      	<div className="row">
-		      			<div className="col-1">
-		      			</div>
-
-			      		<div className="col-sm-10">
+			      		<div className="col">
 				      		<input name='username' placeholder="Username" className="bottomOnly fullWidth" onChange={this.handleChange} value={this.state.username}/>
 			      		</div>
-		      			<div className="col-1">
-		      			</div>
 			      	</div>
 			      	<div className="row spacer">
-		      			<div className="col-1">
-		      			</div>
-
-			      		<div className="col-sm-10">
+			      		<div className="col">
 				      		<input name='password' placeholder="Password" type="password" className="bottomOnly fullWidth" onChange={this.handleChange} value={this.state.password}/>
 			      		</div>
-		      			<div className="col-1">
-		      			</div>
 				    </div>
 				    <div className="row spacer">
-		      			<div className="col-1">
-		      			</div>
-
-				    	<div className="col-sm-5">
+				    	<div className="col">
 				    		<label className="float-left text-muted"><input type="checkbox" className="float-left form-checkbox" onChange={this.handleChange}/> Remember me</label>
 				    	</div>
-				    	<div className="col-sm-5">
-				    		<span className="text-muted"><a href="forgot_password.html" className="float-right text-reset">Forgot Password</a></span>
+				    	<div className="col">
+				    		<span className="text-muted"><Link to="password_reset" className="float-right text-reset">Forgot Password</Link></span>
 				    	</div>
-		      			<div className="col-1">
-		      			</div>
-
 				    </div>
 				    <div className="row">
-		      			<div className="col-1">
-		      			</div>
-				    	<div className="col-sm">
+				    	<div className="col">
 				    		<button type="button" className="btn btn-block btn-primary float-left" onClick={this.handleLogin}>Login</button>
 				    	</div>
-				    	<div className="col-sm">
+				    	<div className="col">
 				    		<a href="signup" className="btn btn-block btn-primary float-right">Sign Up</a>
 				    	</div>
-		      			<div className="col-1">
-		      			</div>
 				    </div>
 				    <div className="row">
 		      			<div className="col">
