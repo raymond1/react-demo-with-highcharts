@@ -160,21 +160,21 @@ class Dashboard extends React.Component{
 
 	render(){
 		let contents = (
-				<>
+				<div>
 					<div className="row">
-						<div className="col">
+						<div className="col-md-4">
 							<HighchartsReact
 							    highcharts={Highcharts}
 							    options={this.totalBuysOptions()}
 							  />
 					  	</div>
-					  	<div className="col">
+					  	<div className="col-md-4">
 							<HighchartsReact
 							    highcharts={Highcharts}
 							    options={this.totalSellsOptions()}
 							  />
 					  	</div>
-					  	<div className="col">
+					  	<div className="col-md-4">
 							<HighchartsReact
 							    highcharts={Highcharts}
 							    options={this.totalFlowOptions()}
@@ -184,14 +184,14 @@ class Dashboard extends React.Component{
 					  	</div>
 					</div>
 					<div className="row">
-						<div className="col">
+						<div className="col-md-12">
 							<HighchartsReact
 							    highcharts={Highcharts}
 							    options={this.totalProportionOptions()}
 							  />
 					  	</div>
 					</div>
-				</>
+				</div>
 			)
 		return (
 			<LoggedInTemplate contents={contents}/>

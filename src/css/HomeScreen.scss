@@ -1,0 +1,21 @@
+$breakpoint-small: 768px;
+.background{
+  background-image:url(../images/background.png);
+  background-position: 5%;
+}
+
+
+.paper-container{
+border: 10px red solid;
+	justify-content: flex-end;
+}
+
+.paper{
+	background: #fff;
+	height: 100%;
+	@media (max-width: $breakpoint-small) {
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		opacity: 50%;
+	}
+}

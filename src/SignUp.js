@@ -81,35 +81,35 @@ class SignUp extends React.Component{
 		return (
 	      		<form className="container" >
 			      	<div className="row">
-			      		<div className="col-sm-5">
+			      		<div className="col-md-6 spacer">
 				      		<input name="firstName" placeholder="First name" className="bottomOnly fullWidth" onChange={this.handleChange}/>
 				      		<div className="error text-danger"> {this.state.justSubmitted?this.errors['firstName']:''}</div>
 			      		</div>
-			      		<div className="col-sm-5">
+			      		<div className="col-md-6 spacer">
 				      		<input name="lastName" placeholder="Last name" className="bottomOnly fullWidth" onChange={this.handleChange}/>
 				      		<div className="error text-danger">{this.state.justSubmitted?this.errors['lastName']:''}</div>
 			      		</div>
 			      	</div>
 			      	<div className="row spacer">
-			      		<div className="col-sm-10">
+			      		<div className="col-sm-12">
 				      		<input name="username" placeholder="Username" className="bottomOnly fullWidth" onChange={this.handleChange}/>
 				      		<div className="error text-danger">{this.state.justSubmitted?this.errors['username']:''}</div>
 			      		</div>
 				    </div>
 			      	<div className="row spacer">
-			      		<div className="col-sm-10">
+			      		<div className="col-sm-12">
 				      		<input name="email" placeholder="Email" type="email" className="bottomOnly fullWidth" onChange={this.handleChange}/>
 				      		<div className="error text-danger">{this.state.justSubmitted?this.errors['email']:''}</div>
 			      		</div>
 				    </div>
 			      	<div className="row spacer">
-			      		<div className="col-sm-10">
+			      		<div className="col-sm-12">
 				      		<input name="password" value={this.state.password} placeholder="Password" type="password" className="bottomOnly fullWidth" onChange={this.handleChange}/>
 				      		<div className="error text-danger">{this.state.justSubmitted?this.errors['password']:''}</div>				      		
 			      		</div>
 				    </div>
 			      	<div className="row spacer">
-			      		<div className="col-sm-10">
+			      		<div className="col-sm-12">
 				      		<input name="confirmPassword" value={this.state.confirmPassword} placeholder="Confirm password" type="password"
 				      		 className="bottomOnly fullWidth" onChange={this.handleChange}/>
 							<div className="error text-danger">{this.state.justSubmitted?this.errors['confirmPassword']:''}</div>
@@ -118,7 +118,7 @@ class SignUp extends React.Component{
 
 
 				    <div className="row spacer">
-				    	<div className="col-sm">
+				    	<div className="col-sm-12">
 				    		<div className="row">
 				    			<div className="col">
 				    				<label className="float-left text-muted"><input name="agreeConditions" type="checkbox" className="float-left form-checkbox" checked={this.state.agreeConditions} onChange={this.handleChange}/> I agree with terms and conditions.</label>

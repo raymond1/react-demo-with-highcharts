@@ -20,12 +20,12 @@ class LoggedInTemplate extends React.Component{
 
 	render(){
 		return (
-			<div className="dashboardContainer d-flex">
+			<div className="dashboardContainer row">
 				{this.renderRedirect()}
-				<div className="">
+				<div className="col-md-2">
 					<SideBar highlighted='Dashboard'/>
 				</div>
-				<div className="flex-grow-1">
+				<div className="col-md-10">
 					{this.props.contents}
 				</div>
 			</div>

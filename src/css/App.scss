@@ -32,6 +32,7 @@ html, body, div#root{
   border-left: none;
   border-right: none;
 }
+
 .container-fluid.main_container{
   margin:0;
   padding:0;
@@ -39,37 +40,4 @@ html, body, div#root{
   height: 100%;
 }
 
-.background{
-  background-image:url(../images/background.png);
-}
 
-.loginWidget{
-  background: #fff;
-  font-family: Kirvy;
-}
-
-.loginWidget h1{
-  border: 1px black solid;
-  padding-left: auto;
-  padding-right: auto;
-  text-align: center;
-  letter-spacing: 1em;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.loginWidget_message{
-  text-align: center;
-  font-size: 10px;
-  font-weight: bold;
-}
-
-.form-checkbox{
-  margin-top: 0.3em;
-  margin-right: 1em;
-}
-
-.btn-primary{
-  background: #343a42;
-  border: 1px #a4a8ba;
-}

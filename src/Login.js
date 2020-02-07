@@ -1,6 +1,6 @@
 import React from 'react';
 import { Redirect, Link } from 'react-router-dom'
-
+import './css/Login.scss'
 class Login extends React.Component{
 	constructor(){
 		super()
@@ -64,10 +64,10 @@ class Login extends React.Component{
 				    	</div>
 				    </div>
 				    <div className="row">
-				    	<div className="col">
+				    	<div className="col-md-6 spacer">
 				    		<button type="button" className="btn btn-block btn-primary float-left" onClick={this.handleLogin}>Login</button>
 				    	</div>
-				    	<div className="col">
+				    	<div className="col-md-6 spacer">
 				    		<a href="signup" className="btn btn-block btn-primary float-right">Sign Up</a>
 				    	</div>
 				    </div>
