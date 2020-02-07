@@ -1,7 +1,6 @@
 import React from 'react'
 import {Route, Switch} from "react-router-dom"
 import Login from './Login.js'
-import Dashboard from './Dashboard.js'
 import SignUp from './SignUp.js'
 import PasswordReset from './PasswordReset.js'
 
@@ -12,10 +11,10 @@ class HomeScreen extends React.Component
 	}
 
 	render(){
-		return	(<div className="container-fluid main_container">
-				<div className="row align-items-end full_height">
-					<div className="col-sm background full_height"></div>
-					<div className="col-sm full_height text-center">
+		return	(<div className="container-fluid main_container background">
+				<div className="row align-items-end">
+					<div className="col"></div>
+					<div className="col-sm text-center">
 						<div className="row">
 							<div className="col-1"></div>
 
@@ -43,7 +42,6 @@ class HomeScreen extends React.Component
 								<Switch>
 									<Route exact path='/signup' component={SignUp}/>
 									<Route exact path='/password_reset' component={PasswordReset}/>
-									<Route exact path = '/dashboard' component={Dashboard}/>
 									<Route path='/' component={Login}/>
 								</Switch>
 							</div>
