@@ -22,10 +22,10 @@ class LoggedInTemplate extends React.Component{
 		return (
 			<div className="dashboardContainer row">
 				{this.renderRedirect()}
-				<div className="col-md-2">
-					<SideBar highlighted='Dashboard'/>
+				<div className="col-md-3">
+					<SideBar/>
 				</div>
-				<div className="col-md-10">
+				<div className="col-md-9">
 					{this.props.contents}
 				</div>
 			</div>

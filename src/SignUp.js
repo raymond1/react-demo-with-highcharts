@@ -98,7 +98,7 @@ class SignUp extends React.Component{
 				    </div>
 			      	<div className="row spacer">
 			      		<div className="col-sm-12">
-				      		<input name="email" placeholder="Email" type="email" className="bottomOnly fullWidth" onChange={this.handleChange}/>
+				      		<input name="email" placeholder="Email" type="text" className="bottomOnly fullWidth" onChange={this.handleChange}/>
 				      		<div className="error text-danger">{this.state.justSubmitted?this.errors['email']:''}</div>
 			      		</div>
 				    </div>

@@ -1,12 +1,22 @@
 .menu{
-	background: #446;
-
+	display: block;
 	.list-group-item{
 		color: #ddd;
 		background-color: transparent;
+		border: none;
 	}
 
 	.selected{
 		border-left: 5px #6666aa solid;
+	}
+}
+
+.navbar{
+	background: #446;
+
+	h4{
+		float: left;
+		width: 12vw;
+		font-size: 18px;
 	}
 }

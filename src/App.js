@@ -6,7 +6,7 @@ import {Route, Switch} from "react-router-dom"
 import HomeScreen from './HomeScreen.js'
 import Dashboard from './Dashboard.js'
 import AboutMe from './AboutMe.js'
-
+import 'bootstrap'
 function App() {
 	return (
 		<Switch>
